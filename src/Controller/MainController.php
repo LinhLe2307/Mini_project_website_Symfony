@@ -15,4 +15,10 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    #[Route('/about', name: 'app_about_us')]
+    public function about(): Response
+    {
+        return $this->render('main/about_us.html.twig');
+    }    
 }
