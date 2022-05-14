@@ -4,53 +4,75 @@
 
 {% block body %}
 {# <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper {
+        margin: 1em auto;
+        max-width: 800px;
+        width: 95%;
+        font: 18px/1.5 sans-serif;
+    }
+
+    .example-wrapper code {
+        background: #F5F5F5;
+        padding: 2px 6px;
+    }
 </style> #}
 
 <div class="example-wrapper">
-    <div class="jumbotron text-center">
-        <h1>Hello {{ controller_name }}! ✅</h1>
-        <button class="btn btn-outline-primary"><a href="{{ path('app_contact')}}">Let's talk</a></button>
-
-        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Fruit bowl" width="900" height="600"/>
+    <div class="text-center">
+        <h1 class="mt-5">Hello {{ controller_name }}! ✅</h1>
+        <button class="btn btn-outline-primary mt-5 mb-5"><a href="{{ path('app_contact')}}">Let's talk</a></button>
+        <div>
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                alt="Fruit bowl" width="900" height="600" />
+        </div>
     </div>
 
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container p-4 mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
 
         <!--Grid row-->
         <div class="row">
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Fruit bowl" width="600" height="400"/>
-            <!--Grid column-->
+                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt="Fruit bowl" width="600" height="400" />
+                <!--Grid column-->
             </div>
 
             <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 align-items-center">
                 <h1>Delicious food creates memories</h1>
-                <p>Belton is food studio that not just caters out deliciousness, but lives by the philosophy that nothing brings people together like good food. Whatever the occasion that you need our food for, whatever dietary requirements, we will make it happen.</p>
+                <p>Belton is food studio that not just caters out deliciousness, but lives by the philosophy that
+                    nothing brings people together like good food. Whatever the occasion that you need our food for,
+                    whatever dietary requirements, we will make it happen.</p>
                 <button class="btn btn-outline-primary"><a href="{{ path('app_about_us') }}">Our story</a></button>
-            <!--Grid column-->
+                <!--Grid column-->
             </div>
         </div>
-    <!-- Grid container -->    
+        <!-- Grid container -->
 
     </div>
-    <h1 class="text-center">Our offers for your occasion or event</h1>
-    <ul class="meals-wrapper">
-    {% for key, meal in meals %}
-        <li class="list-group-item text-center">
-            {{key}}: {{meal}}
-        </li>
-    {% endfor %}
-    </ul>
-    <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Fruit bowl" width="900" height="600"/>
+    <div class="mt-5 mb-5">
+        <h1 class="text-center">Our offers for your occasion or event</h1>
+        <ul class="row text-center">
+            {% for key, meal in meals %}
+            <!-- <li class="list-group-item text-center"> -->
+            <li class="col-6 mt-5 mb-5" style="list-style: none; margin: 0 auto; width: 500px">
+                <h3>{{key}}</h3>
+                <p>{{meal}}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="text-center">
+        <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            alt="Fruit bowl" width="900" height="600" />
+    </div>
 
-
-    <div>
-        <h1>First, we eat. Then we do everything else. Let us take care of food at your special event.</h1>
+    <div class="text-center p-5 mt-5" style="background-color: rgb(250, 180, 50);">
+        <h1 class="mb-5" style="margin: 0 auto; width: 800px">First, we eat. Then we do everything else. Let us take
+            care of food at your special
+            event.</h1>
         <button class="btn btn-outline-primary"><a href="{{ path('app_contact')}}">Get in touch</a></button>
     </div>
 

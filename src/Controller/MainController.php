@@ -19,6 +19,7 @@ class MainController extends AbstractController
             'Mini Lamb Burger' => 'Although the flavors are slightly unusual, guests always go for seconds.',
             'Duck Confit Quesadillas' => 'Sophistication and flavor come together in this perfectly cheesy quesadilla.'
         ]; 
+        
         return $this->render('main/index.html.twig', [
             'controller_name' => 'Food App',
             'meals' => $meals
