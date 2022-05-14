@@ -1,4 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Raleway&display=swap");
+
 body {
   background-color: #ecf0f3 !important;
-  
+  font-family: "Raleway", sans-serif !important;
+  max-width: 1600px;
+  margin: 0 auto !important;
+}
+
+header {
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.title {
+  font-size: 60px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.breakfast-image {
+  object-fit: cover;
+}
+
+.description-text {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.meals-list {
+  list-style: none;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.slogan-container {
+  background-color: rgb(243, 190, 90);
+}
+
+.slogan-container > h1 {
+  margin: 0 auto;
+  width: 800px;
 }
