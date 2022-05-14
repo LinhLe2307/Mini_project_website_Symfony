@@ -3,27 +3,27 @@
 {% block title %}Hello MainController!{% endblock %}
 
 {% block body %}
-{# <style>
-    .example-wrapper {
-        margin: 1em auto;
-        max-width: 800px;
-        width: 95%;
-        font: 18px/1.5 sans-serif;
+<style>
+    a {
+        text-decoration: none;
     }
 
-    .example-wrapper code {
-        background: #F5F5F5;
-        padding: 2px 6px;
+    .homepage-container {
+        background-color: linear-gradient(145deg, #e2e8ec, #ffffff);
     }
-</style> #}
 
-<div class="example-wrapper">
+    .breakfast-image{
+        object-fit: cover;
+    }
+</style>
+
+<div class="homepage-container">
     <div class="text-center">
-        <h1 class="mt-5">Hello {{ controller_name }}! ✅</h1>
+        <h1 class="mt-5">Bring people together with great food</h1>
         <button class="btn btn-outline-primary mt-5 mb-5"><a href="{{ path('app_contact')}}">Let's talk</a></button>
         <div>
             <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                alt="Fruit bowl" width="900" height="600" />
+                alt="Fruit bowl" width=80%/>
         </div>
     </div>
 
@@ -33,14 +33,14 @@
         <!--Grid row-->
         <div class="row">
             <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <div class="text-center col-lg-6 col-md-12 mb-4 mb-md-0">
                 <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                    alt="Fruit bowl" width="600" height="400" />
+                    alt="breakfast" width="600" height="400" />
                 <!--Grid column-->
             </div>
 
             <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 align-items-center">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                 <h1>Delicious food creates memories</h1>
                 <p>Belton is food studio that not just caters out deliciousness, but lives by the philosophy that
                     nothing brings people together like good food. Whatever the occasion that you need our food for,
@@ -65,8 +65,8 @@
         </ul>
     </div>
     <div class="text-center">
-        <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-            alt="Fruit bowl" width="900" height="600" />
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            alt="Fruit bowl" width=80% height="500px" class="breakfast-image"/>
     </div>
 
     <div class="text-center p-5 mt-5" style="background-color: rgb(250, 180, 50);">
