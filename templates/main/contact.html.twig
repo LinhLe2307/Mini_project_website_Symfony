@@ -1,7 +1,35 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}About Us{% endblock %}
+{% block title %}Contact{% endblock %}
 
 {% block body %}
-<h1>Contact</h1>
+<main>
+<div class="form-container">
+<h2 class="contact">Contact us </h2>
+<form >
+  <div class="form-group">
+    <label for="name">Your name:</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+   <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone number:</label>
+    <input type="tel" class="form-control" id="number">
+  </div>
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">Your Message: </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+   <div class="form-group form-check">
+  </div>
+ <button class="btn btn-primary btn-submit" type="submit">Submit</button>
+</form>
+</div>
+</main>
+
+
+
 {% endblock %}
