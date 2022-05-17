@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Raleway&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ecf0f3 !important;
   font-family: "Raleway", sans-serif !important;
@@ -9,6 +15,7 @@ body {
 
 header {
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  min-height: 10vh !important;
 }
 
 a {
@@ -43,4 +50,22 @@ a {
 .slogan-container > h1 {
   margin: 0 auto;
   width: 800px;
+}
+main {
+  min-height: 90vh;
+  background-image: url(https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.form-container {
+  width: 45%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+.contact {
+  color: white;
+  text-align: center;
+  background-color: rgb(243, 190, 90);
+}
+
+.btn-submit {
+  width: 100%;
 }
